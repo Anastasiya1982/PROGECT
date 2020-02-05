@@ -1,0 +1,471 @@
+                       @import "vars";
+                       @import "libs";
+                       @import "fonts";
+                       @import "media";
+                       * {
+                           margin: 0;
+                           padding: 0;
+                           box-sizing: border-box;
+                       }
+                       
+                       body {
+                           height: 100%;
+                           font-family: 'Open Sans Regular';
+                           font-size: 14px;
+                           background-color: #ffffff;
+                       }
+                       /* ////стилизуем header*/ ////
+                       .header {
+                           width: 100%;
+                           position: fixed;
+                           top: 0;
+                           left: 0;
+                           z-index: 50;
+                       }
+                       
+                       header:before {
+                           content: "";
+                           position: absolute;
+                           top: 0;
+                           left: 0;
+                           width: 100%;
+                           height: 100%;
+                           background-color: #ffffff;
+                           z-index: 2;
+                       }
+                       
+                       .container {
+                           max-width: 1170px;
+                           margin: 0 auto;
+                           padding: 0px 10px;
+                       }
+                       
+                       .header_body {
+                           position: relative;
+                           display: flex;
+                           height: 100px;
+                           align-items: center;
+                           justify-content: space-between;
+                       }
+                       
+                       .header_list {
+                           display: flex;
+                           position: relative;
+                           z-index: 2;
+                       }
+                       
+                       .header_logo {
+                           list-style: none;
+                           text-decoration: none;
+                           width: 125px;
+                           font-family: 'Lobster';
+                           font-size: 43px;
+                           color: #44c0c2;
+                           position: relative;
+                           z-index: 3;
+                       }
+                       
+                       .header_menu {
+                           height: 100%;
+                           display: flex;
+                           align-items: center;
+                       }
+                       
+                       .header_burger {
+                           display: none;
+                       }
+                       
+                       .header_list li {
+                           list-style: none;
+                           margin-left: 10px;
+                           display: flex;
+                           align-items: center;
+                           box-sizing: border-box;
+                           height: 100%;
+                           position: relative;
+                           z-index: 2;
+                       }
+                       
+                       .header_link {
+                           display: flex;
+                           text-align: center;
+                           padding: 42px 20px;
+                           text-decoration: none;
+                           font-family: 'Open Sans Regular';
+                           font-size: 15px;
+                           color: #484c55;
+                       }
+                       
+                       .header_link:hover {
+                           cursor: pointer;
+                           border-bottom: 2px solid #49cbcd;
+                           border-top: 2px solid transparent;
+                           background-color: #f8f9fb;
+                           color: #49cbcd;
+                       }
+                       
+                       @media(max-width:767px) {
+                           .header_body {
+                               height: 50px;
+                           }
+                           .header_logo {
+                               font-size: 30px;
+                               color: #44c0c2;
+                           }
+                           .header_burger {
+                               display: block;
+                               position: relative;
+                               width: 30px;
+                               height: 20px;
+                               z-index: 3;
+                           }
+                           .header_burger span {
+                               position: absolute;
+                               left: 0;
+                               background-color: #484c55;
+                               width: 100%;
+                               height: 2px;
+                               top: 9px
+                           }
+                           .header_burger:before,
+                           .header_burger:after {
+                               content: "";
+                               background-color: #484c55;
+                               position: absolute;
+                               width: 100%;
+                               height: 2px;
+                               left: 0;
+                           }
+                           .header_burger:before {
+                               top: 0;
+                           }
+                           .header_burger:after {
+                               bottom: 0;
+                           }
+                           .header_burger.active::before {
+                               transform: rotate(45dg);
+                           }
+                           .header_menu {
+                               position: fixed;
+                               display: block;
+                               top: 0;
+                               left: 0;
+                               right: 0;
+                               widows: 300px;
+                               height: 400px;
+                               background-color: #44c0c2;
+                               padding: 50px 0px 0px 0px;
+                           }
+                           .header_list {
+                               display: block;
+                           }
+                           .header_list li {
+                               height: 50px;
+                               color: #fff;
+                           }
+                           .header_link {
+                               display: flex;
+                               text-align: center;
+                               padding: 15px 20px;
+                               text-decoration: none;
+                               font-family: 'Open Sans Regular';
+                               font-size: 15px;
+                               color: #fff;
+                           }
+                       }
+                       /* Banner*/
+                       
+                       .slider {
+                           margin-top: 103px;
+                       }
+                       
+                       .slider::before {
+                           content: url();
+                       }
+                       
+                       .slick-prev::before,
+                       .slick-next::before {
+                           content: "";
+                           display: block;
+                           height: 100%;
+                           background-size: cover;
+                           background-repeat: no-repeat;
+                           background-position: center;
+                       }
+                       
+                       .slick-prev::before {
+                           background-image: url("../media/angle-left-solid.svg");
+                       }
+                       
+                       .slick-next::before {
+                           background-image: url("../media/angle-right-solid.svg");
+                       }
+                       
+                       .slick-dots li button:before {
+                           content: "";
+                           opacity: 1;
+                           display: inline-block;
+                           height: 100%;
+                           background-color: #484c55;
+                           border-radius: 50%;
+                       }
+                       
+                       .slick-dots .slick-active button:before {
+                           background-color: rgb(34, 114, 134);
+                       }
+                       /* cекция Сервис - service ///////*/
+                       
+                       .service {
+                           width: 100%;
+                           margin: 0 auto;
+                           background-color: #f1f1f1;
+                       }
+                       
+                       .service_row {
+                           display: flex;
+                       }
+                       
+                       .service_colum {
+                           display: flex;
+                       }
+                       
+                       .service_item {
+                           width: 100%;
+                           padding-top: 100px;
+                           background-color: #ffffff;
+                           color: #7d8088;
+                           display: flex;
+                           flex-direction: column;
+                       }
+                       
+                       .service_item-pict {
+                           display: block;
+                           margin: 0 auto;
+                           width: 100px;
+                           height: 100px;
+                           text-align: center;
+                           border: 3px solid #44c0c2;
+                           border-radius: 50%;
+                           margin-bottom: 40px;
+                       }
+                       
+                       .service_item-pict img {
+                           display: block;
+                           margin: 25px auto;
+                       }
+                       
+                       .service_item h3 {
+                           font-family: 'Open Sans Regular';
+                           font-weight: lighter;
+                           font-size: 22px;
+                           color: #4e525d;
+                           text-align: center;
+                           padding-bottom: 20px;
+                       }
+                       
+                       .service_item p {
+                           color: #7d8088;
+                           font-size: 14px;
+                           text-align: center;
+                           padding: 0px 20px;
+                       }
+                       
+                       .service_buttom {
+                           text-align: center;
+                           margin-bottom: 50px;
+                       }
+                       
+                       .service_buttom a {
+                           display: block;
+                           height: 30px;
+                           width: 100px;
+                           padding: 5px 10px;
+                           border-radius: 3px;
+                           margin: 30px auto;
+                           background-color: #49cbcd;
+                           color: #fff;
+                           font-family: 'Open Sans Regular';
+                           font-size: 14px;
+                           text-decoration: none;
+                           text-align: center;
+                           cursor: pointer;
+                       }
+                       /*   ///Portfolio   ////*/
+                       
+                       .portfolio {
+                           background-color: #f1f1f1;
+                           width: 100%;
+                       }
+                       
+                       .portfolio_body h2 {
+                           font-family: 'Open Sans Regular';
+                           font-size: 42px;
+                           color: #484c55;
+                           padding: 50px 0px;
+                           font-weight: lighter;
+                           text-align: center;
+                       }
+                       
+                       .portfolio_row {
+                           display: flex;
+                           flex-wrap: wrap;
+                           justify-content: space-between;
+                       }
+                       
+                       .portfolio_item {
+                           flex: 0 1 33.33%;
+                           display: block;
+                           height: 320px;
+                           margin-bottom: 30px;
+                           flex-direction: column;
+                       }
+                       
+                       .portfolio_img {
+                           max-width: 100%;
+                           display: block;
+                           width: 350px;
+                           height: 320px;
+                       }
+                       
+                       .portfolio_bottom {
+                           width: 100%;
+                           text-align: center;
+                           padding: 60px 0px 100px 0px;
+                       }
+                       
+                       .portfolio_bottom a {
+                           display: block;
+                           height: 60px;
+                           width: 230px;
+                           margin: 0 auto;
+                           padding: 13px 0px;
+                           border-radius: 3px;
+                           background-color: #49cbcd;
+                           color: #fff;
+                           letter-spacing: 1px;
+                           font-family: 'Open Sans Regular';
+                           font-size: 24px;
+                           align-items: center;
+                           text-decoration: none;
+                           text-align: center;
+                           cursor: pointer;
+                       }
+                       /*  ////стиkизуем блок Plants-vertical, блок с карточками//*/
+                       
+                       .plants-vertical {
+                           padding: 5px 0;
+                           background-color: #f1f1f1;
+                       }
+                       
+                       .vertical_body {
+                           max-width: 1170px;
+                           margin: 0 auto;
+                           padding-top: 120px;
+                           padding-bottom: 100px;
+                           background-color: #f1f1f1;
+                       }
+                       
+                       .vertical_row {
+                           display: flex;
+                           margin: 0 -16px;
+                       }
+                       
+                       .vertical_column {
+                           flex: 0 1 33.333%;
+                           padding: 0px 16px;
+                           display: flex;
+                       }
+                       
+                       .vertical_item {
+                           width: 100%;
+                           background-color: #ffffff;
+                           color: #9ba1a7;
+                           border-radius: 2px;
+                           border: 1px solid #f1f1f1;
+                           display: flex;
+                           flex-direction: column;
+                       }
+                       
+                       .vertical_subtitle {
+                           text-align: center;
+                           background-color: #485460;
+                           color: #fff;
+                           font-family: 'Open Sans Regular';
+                           font-size: 24px;
+                           padding: 24px 0px;
+                           letter-spacing: 1px;
+                       }
+                       
+                       .vertical_subtitle-pro {
+                           text-align: center;
+                           background-color: #49cbcd;
+                           color: #fff;
+                           font-family: 'Open Sans Regular';
+                           font-size: 24px;
+                           padding: 24px 0px;
+                           letter-spacing: 1px;
+                       }
+                       
+                       .vertical_lable {
+                           background-color: #f8f9fb;
+                           text-align: center;
+                           color: #6b757f;
+                           font-family: 'Open Sans Regular';
+                           font-size: 20px;
+                           padding: 20px 0px;
+                       }
+                       
+                       .verical_text {
+                           flex: 1 1 auto;
+                       }
+                       
+                       .verical_text li {
+                           list-style: none;
+                           background-color: #ffffff;
+                           font-family: 'Myriad Pro';
+                           font-size: 14px;
+                           padding: 16px 0px;
+                           text-align: center;
+                           border-bottom: 1px solid #ecf0f1;
+                       }
+                       
+                       .vertical_bottom {
+                           background-color: #f8f9fb;
+                           text-align: center;
+                           height: 100px;
+                       }
+                       
+                       .vertical_btn {
+                           display: block;
+                           height: 40px;
+                           width: 170px;
+                           padding: 8px 0px;
+                           border-radius: 3px;
+                           margin: 30px auto;
+                           background-color: #788492;
+                           color: #fff;
+                           font-family: 'Open Sans';
+                           font-size: 14px;
+                           border-top: 1px solid #ecf0f1;
+                           text-decoration: none;
+                           text-align: center;
+                           cursor: pointer;
+                       }
+                       
+                       .vertical_btn-pro {
+                           display: block;
+                           height: 40px;
+                           width: 170px;
+                           margin: 30px auto;
+                           padding: 8px 0px;
+                           border-radius: 3px;
+                           background-color: #49cbcd;
+                           color: #fff;
+                           font-family: 'Open Sans';
+                           font-size: 14px;
+                           border-top: 1px solid #ecf0f1;
+                           align-items: center;
+                           text-decoration: none;
+                           text-align: center;
+                           cursor: pointer;
+                       }
