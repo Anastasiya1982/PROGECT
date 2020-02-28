@@ -347,7 +347,6 @@
     .container {
         width: 400px;
         margin: 0 auto;
-        padding-left: 10px;
     }
     /*стилизуем  header*/
     .header {
@@ -616,6 +615,8 @@
     .contact-us {
         h2 {
             padding-bottom: 20px;
+            font-size: 13px;
+            padding-top: 20px;
         }
     }
     .contact-wr {
@@ -623,11 +624,6 @@
         width: 100%;
         padding: 0px 20px;
         flex-direction: column;
-    }
-    .contact-us h2 {
-        font-size: 13px;
-        padding-top: 20px;
-        padding-bottom: 30px;
     }
     .social-icons {
         order: 2;
