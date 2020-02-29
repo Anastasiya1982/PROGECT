@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="./fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/fancybox/jquery.fancybox.min.css">
     <link type="text/css" href="./css/style.min.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Предзагрузочная анимация-->
-
     <!--Основной контент-->
-
     <div class="wrapper">
-
         <!-- секция  Header -->
         <header class="header">
             <div class="container">
@@ -29,11 +27,11 @@
                     <nav class="header-menu">
                         <ul class="header-list">
                             <li><a class="header-link" href="#">Home</a></li>
-                            <li><a class="header-link" href="#">Service</a></li>
-                            <li><a class="header-link" href="#"> Portfolio  </a></li>
-                            <li><a class="header-link" href="#"> Team</a></li>
+                            <li><a class="header-link" href="#Service">Service</a></li>
+                            <li><a class="header-link" href="#Portfolio"> Portfolio  </a></li>
+                            <li><a class="header-link" href="#Team"> Team</a></li>
                             <li><a class="header-link" href="#">Blog</a></li>
-                            <li><a class="header-link" href="#">Contacts</a></li>
+                            <li><a class="header-link" href="#Contacts">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -66,16 +64,11 @@
                     </div>
                 </div>
             </div>
-            <div class="banner-mob">
-                <h2>This is a main heading</h2>
-                <p>Lorem ipsum dolor sit amet consectetur<br/> adipisicing elit.</p>
-                <a href="#">Learn more</a>
 
-            </div>
         </section>
 
         <!-- секция Cервис -->
-        <section class="service">
+        <section class="service" id="Service">
             <div class="container">
                 <div class="service-body">
                     <div class="service-row">
@@ -131,7 +124,7 @@
 
         </section>
         <!--сeкция портофлио-->
-        <section class="portfolio">
+        <section class="portfolio" id="Portfolio">
             <div class="container">
                 <div class="portfolio-body">
                     <h2>Portfolio</h2>
@@ -155,14 +148,21 @@
                             <img class="portfolio-img" src="./img/layer-11-portfolio.jpg" alt="mountains picture">
                         </a>
                     </div>
+                    <div class="portfolio-mobile">
+                        <div class="gallery-mobile">
+                            <img src="./img/layer-11-portfolio.jpg" alt="picture">
+                            <img src="./img/layer-10-portfolio.jpg" alt="picture">
+                            <img src="./img/layer-7-portfolio.jpg" alt="picture">
+                        </div>
+                    </div>
                     <div class="portfolio-bottom">
-                        <a href="#">See all works</a>
+                        <a target="_blank" href="https://dribbble.com/">See all works</a>
                     </div>
                 </div>
             </div>
         </section>
         <!--Секция Наша Команда  TEAM-->
-        <section class="team" id="team">
+        <section class="team" id="Team">
             <div class="container">
                 <h3>The Team</h3>
                 <div class="team-slider">
@@ -290,7 +290,7 @@
             </div>
         </section>
         <!-- Секция  Формы и контакты -->
-        <section class="contact-us">
+        <section class="contact-us" id="Contacts">
             <div class="container">
                 <h2>Contact Us</h2>
                 <div class="contact-wr">
@@ -307,29 +307,27 @@
                         <p class="social-icons-info">info@cssauthor.com</p>
                     </div>
                     <div class="form-block">
-                        <form method="POST" action="form.php">
+                        <form method="POST" action="http://formspree.io/mahanasty@mail.ru">
                             <div class="form-group">
-                                <!--<input type="hidden" name="main-form" value="Основная форма">-->
                                 <input class="form-control" type="text" name="name" required placeholder="Name">
                                 <input class="form-control" type="email" name="email" required placeholder="Email">
                             </div>
                             <textarea class="form-control-text" name="text" required placeholder="Massage"></textarea>
+                            <input class="form-group-btn" type="submit" value="Send"></input>
 
-                            <div class="form-group-btn">
-                                <button type="submit">Sent</button>
-                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
 
-        <script src="./js/jquery-3.4.1.js"></script>
-        <script src="./slick/slick.min.js"></script>
-        <script src="./slick/slick.js"></script>
-        <script src="./fancybox/jquery.fancybox.min.js"></script>
-        <script src="./js/main.js"></script>
-        <script src="./js/libs.min.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/slick/slick.min.js"></script>
+    <script src="./js/slick/slick.js"></script>
+    <script src="./css/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/libs.min.js"></script>
 </body>
 
 </html>

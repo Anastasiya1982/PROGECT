@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",
-    "del": "^5.0.0",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
@@ -22,5 +22,13 @@
   },
   "dependencies": {
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiya1982/PROGECT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Anastasiya1982/PROGECT/issues"
+  },
+  "homepage": "https://github.com/Anastasiya1982/PROGECT#readme"
 }
