@@ -15,15 +15,69 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    $('.slider-wr').slick({
-        dots: false,
-        autoplay: false
-    });
+$('.slider-wr').slick({
+    dots: false,
+    autoplay: false
 });
 
+$('.team-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [{
+            breakpoint: 865,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 650,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+
+});
+
+
 $(document).ready(function() {
-    $(".fancybox").fancybox();
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+            'slideShow',
+            'share',
+            'zoom',
+            'fullScreen',
+            'download',
+            'close'
+        ],
+        loop: true,
+        gutter: 10,
+        keyboard: true,
+        arrows: true,
+        infobar: true,
+        smallBtn: false,
+        toolbar: true,
+        idleTime: 3,
+        animationEffect: "zoom-in-out",
+        animationDuration: 600,
+        transitionEffect: "tube",
+        transitionDuration: 600,
+        slideClass: "myClass",
+        baseClass: "myclass",
+        slideShow: {
+            autoStart: false,
+            speed: 1000
+        },
+        youtube: {
+            controls: 0,
+            showinfo: 0
+        },
+        thumbs: {
+            autoStart: true
+        }
+    });
 });
 
 $('input,textarea').focus(function() {
