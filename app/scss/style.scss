@@ -1,10 +1,49 @@
         @import "vars";
         @import "libs";
         @import "fonts";
+        @import "team";
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        
+        #p_prldr {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #94d3d4;
+            z-index: 100;
+        }
+        
+        .contpre small {
+            font-size: 25px;
+        }
+        
+        .contpre {
+            width: 250px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            margin-left: -125px;
+            margin-top: -75px;
+            color: #fff;
+            font-size: 40px;
+            letter-spacing: -2px;
+            text-align: center;
+            line-height: 35px;
+        }
+        
+        #p_prldr .svg_anm {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            background: url('../img/tail-spin.svg') center center no-repeat;
+            background-size: 41px;
+            margin: -16px 0 0 -16px;
         }
         
         body {
@@ -411,86 +450,92 @@
             .container {
                 max-width: 1070px;
                 margin: 0 auto;
-                a {
-                    visibility: hidden;
+            }
+            a {
+                text-decoration: none;
+                display: block;
+                height: 60px;
+                width: 230px;
+                margin: 0 auto;
+                padding: 14px 0px;
+                margin-bottom: 30px;
+                border-radius: 3px;
+                background-color: #49cbcd;
+                color: #fff;
+                letter-spacing: 1px;
+                font-family: 'Open Sans Regular';
+                font-size: 24px;
+                align-items: center;
+                text-align: center;
+            }
+            a:hover {
+                cursor: pointer;
+                border: 1px solid #23b2b4;
+                box-shadow: 0 0 10px #166668;
+            }
+            h3 {
+                text-align: center;
+                font-family: 'Open Sans Regular';
+                font-size: 42px;
+                padding: 100px 20px 20px;
+                color: #95979e;
+                font-weight: lighter;
+            }
+            .team-slider {
+                position: relative;
+                width: 100%;
+                top: 0;
+                left: 0;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .team-member-slide {
+                display: flex;
+                flex-direction: column;
+                width: 25%;
+                margin-top: 100px;
+                padding: 0px 20px 100px;
+                h4 {
                     display: block;
-                    text-decoration: none;
                     text-align: center;
-                    color: #23b2b4;
-                    font-family: 'Myriad Pro';
-                    font-size: 15px;
-                    padding: 5px 20px;
+                    padding-top: 50px;
+                    font-size: 20px;
+                    color: #51545c;
+                    font-weight: lighter;
+                }
+                h5 {
+                    display: block;
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: lighter;
+                    color: #4e525d;
+                }
+                p {
+                    display: block;
+                    text-align: center;
+                    padding-top: 20px;
+                    color: #4e525d;
                 }
             }
-        }
-        
-        h3 {
-            text-align: center;
-            font-family: 'Open Sans Regular';
-            font-size: 42px;
-            padding: 100px 20px 20px;
-            color: #95979e;
-            font-weight: lighter;
-        }
-        
-        .team-slider {
-            position: relative;
-            width: 100%;
-            top: 0;
-            left: 0;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .team-member-slide {
-            display: flex;
-            flex-direction: column;
-            width: 25%;
-            margin-top: 100px;
-            padding: 0px 20px 100px;
-            h4 {
+            .team-foto {
                 display: block;
-                text-align: center;
-                padding-top: 50px;
-                font-size: 20px;
-                color: #51545c;
-                font-weight: lighter;
+                width: 180px;
+                height: 180px;
+                border: 1px solid #dfdfe4;
+                border-radius: 50%;
+                background-color: #eeeef0;
+                margin: 0 auto;
             }
-            h5 {
-                display: block;
-                text-align: center;
-                font-size: 12px;
-                font-weight: lighter;
-                color: #4e525d;
+            .team-foto:hover {
+                background-image: url('../img/redCross.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 1px solid #b6eeec;
             }
-            p {
-                display: block;
-                text-align: center;
-                padding-top: 20px;
-                color: #4e525d;
+            .team-foto img {
+                visibility: hidden;
             }
-        }
-        
-        .team-foto {
-            display: block;
-            width: 180px;
-            height: 180px;
-            border: 1px solid #dfdfe4;
-            border-radius: 50%;
-            background-color: #eeeef0;
-            margin: 0 auto;
-        }
-        
-        .team-foto:hover {
-            background-image: url('../img/redCross.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            border: 1px solid #b6eeec;
-        }
-        
-        .team-foto img {
-            visibility: hidden;
         }
         /*  ////стилизуем блок Plants-vertical, блок с карточками//*/
         
