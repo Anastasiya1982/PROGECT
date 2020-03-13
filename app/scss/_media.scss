@@ -18,7 +18,8 @@
     
     @media screen and (max-width:768px) {
         .container {
-            width: 560px;
+            max-width: 560px;
+            width: 100%;
             margin: 0 auto;
         }
         .header-body {
@@ -128,10 +129,10 @@
                 left: 15px;
             }
             .slick-next {
-                right: 5px;
+                right: 15px;
                 display: block;
-                width: 30px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
             }
             .slick-next::before {
                 margin-left: 13px;
@@ -282,29 +283,26 @@
         /* секция Комментарии Comments*/
         .comments {
             width: 100%;
-        }
-        .container {
-            max-width: 787px;
-        }
-        .slider-wr {
-            width: 100%;
-            margin-top: 10px;
-        }
-        .comments h2 {
-            font-family: 'Open Sans Regular';
-            font-weight: lighter;
-            font-size: 20px;
-            color: #4e525d;
-            padding-top: 50px;
-            margin-bottom: 20px;
-        }
-        .slider-wr p {
-            text-align: center;
-            padding: 0px 120px 15px 100px;
-            color: #4e525d;
-            font-family: 'Open Sans Regular';
-            font-weight: lighter;
-            font-size: 12px;
+            .slider-wr {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .comments h2 {
+                font-family: 'Open Sans Regular';
+                font-weight: lighter;
+                font-size: 20px;
+                color: #4e525d;
+                padding-top: 50px;
+                margin-bottom: 20px;
+            }
+            .slider-wr p {
+                text-align: center;
+                padding: 0px 120px 15px 100px;
+                color: #4e525d;
+                font-family: 'Open Sans Regular';
+                font-weight: lighter;
+                font-size: 12px;
+            }
         }
         .slider-wr .name {
             font-family: 'Open Sans Regular';
@@ -312,17 +310,15 @@
             color: #a196b4;
             font-size: 14px;
         }
-        .slick-prev,
-        .slick-next {
-            top: 10%;
+        .slider-wr.slick-prev,
+        .slider-wr .slick-next {
+            top: 30%;
         }
-        .slick-prev {
-            top: 10%;
+        .slider-wr.slick-prev {
             left: 25px;
         }
-        .slick-next {
-            right: 80px;
-            top: 10%;
+        .slider-wr .slick-next {
+            right: 50px;
             z-index: 5;
         }
         /* Секция Формы*/
@@ -590,9 +586,8 @@
         }
         .fancybox {
             display: block;
-            max-width: 300px;
-            width: 100%;
-            margin: 0 auto;
+            width: 70%;
+            margin: 10px auto;
         }
         .portfolio-bottom {
             padding: 18px 0px 30px 0px;
@@ -628,7 +623,7 @@
             }
         }
         /*сeкция TEAM*/
-        .container {
+        .team {
             a {
                 visibility: visible;
                 display: block;
