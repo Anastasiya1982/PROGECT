@@ -398,9 +398,10 @@
     }
     /*lkz 480px*/
     
-    @media screen and (max-width:570px) {
+    @media screen and (max-width:545px) {
         .container {
-            width: 450px;
+            max-width: 450px;
+            width: 100%;
             margin: 0 auto;
         }
         /*стилизуем  header*/
@@ -430,7 +431,7 @@
                 height: 18px;
                 z-index: 3;
                 top: 20px;
-                right: 25px;
+                right: 50px;
             }
             .header-burger span {
                 position: absolute;
