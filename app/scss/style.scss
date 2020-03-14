@@ -451,7 +451,7 @@
                 max-width: 1070px;
                 margin: 0 auto;
             }
-            a {
+            .team-button {
                 text-decoration: none;
                 display: block;
                 height: 60px;
@@ -468,7 +468,7 @@
                 align-items: center;
                 text-align: center;
             }
-            a:hover {
+            .team-button:hover {
                 cursor: pointer;
                 border: 1px solid #23b2b4;
                 box-shadow: 0 0 10px #166668;
